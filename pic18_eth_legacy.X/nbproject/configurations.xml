@@ -47,6 +47,8 @@
         <itemPath>TCPIP Stack/UDP.c</itemPath>
         <itemPath>TCPIP Stack/Announce.c</itemPath>
         <itemPath>TCPIP Stack/DNS.c</itemPath>
+        <itemPath>TCPIP Stack/MQTT.c</itemPath>
+        <itemPath>MQTTClient.c</itemPath>
       </logicalFolder>
       <itemPath>main.c</itemPath>
       <itemPath>PingDemo.c</itemPath>
