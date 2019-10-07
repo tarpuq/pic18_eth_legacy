@@ -50,10 +50,8 @@
 void SYSTEM_Initialize(void)
 {
 
-    INTERRUPT_Initialize();
     PIN_MANAGER_Initialize();
     OSCILLATOR_Initialize();
-    TMR0_Initialize();
 }
 
 void OSCILLATOR_Initialize(void)

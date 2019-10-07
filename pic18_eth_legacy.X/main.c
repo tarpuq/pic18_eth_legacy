@@ -284,13 +284,13 @@ void main(void)
     // Use the following macros to:
 
     // Enable the Global Interrupts
-    INTERRUPT_GlobalInterruptEnable();
+    //INTERRUPT_GlobalInterruptEnable();
 
     // Disable the Global Interrupts
     //INTERRUPT_GlobalInterruptDisable();
 
     // Enable the Peripheral Interrupts
-    INTERRUPT_PeripheralInterruptEnable();
+    //INTERRUPT_PeripheralInterruptEnable();
 
     // Disable the Peripheral Interrupts
     //INTERRUPT_PeripheralInterruptDisable();
@@ -299,6 +299,8 @@ void main(void)
     {
         static DWORD t = 0;
         static DWORD dwLastIP = 0;
+
+        TickUpdate();
 
         // Add your application code
         StackTask();
