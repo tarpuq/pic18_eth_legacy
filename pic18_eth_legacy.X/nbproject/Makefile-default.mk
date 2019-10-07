@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=mcc_generated_files/device_config.c mcc_generated_files/mcc.c mcc_generated_files/pin_manager.c mcc_generated_files/tmr0.c mcc_generated_files/interrupt_manager.c "TCPIP Stack/StackTsk.c" "TCPIP Stack/IP.c" "TCPIP Stack/ETH97J60.c" "TCPIP Stack/Helpers.c" "TCPIP Stack/ICMP.c" "TCPIP Stack/ARP.c" "TCPIP Stack/Tick.c" "TCPIP Stack/TCP.c" main.c PingDemo.c GenericTCPServer.c
+SOURCEFILES_QUOTED_IF_SPACED=mcc_generated_files/device_config.c mcc_generated_files/mcc.c mcc_generated_files/pin_manager.c mcc_generated_files/tmr0.c mcc_generated_files/interrupt_manager.c "TCPIP Stack/StackTsk.c" "TCPIP Stack/IP.c" "TCPIP Stack/ETH97J60.c" "TCPIP Stack/Helpers.c" "TCPIP Stack/ICMP.c" "TCPIP Stack/ARP.c" "TCPIP Stack/Tick.c" "TCPIP Stack/TCP.c" "TCPIP Stack/AutoIP.c" "TCPIP Stack/DHCP.c" "TCPIP Stack/UDP.c" "TCPIP Stack/Announce.c" main.c PingDemo.c GenericTCPServer.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/mcc_generated_files/device_config.p1 ${OBJECTDIR}/mcc_generated_files/mcc.p1 ${OBJECTDIR}/mcc_generated_files/pin_manager.p1 ${OBJECTDIR}/mcc_generated_files/tmr0.p1 ${OBJECTDIR}/mcc_generated_files/interrupt_manager.p1 "${OBJECTDIR}/TCPIP Stack/StackTsk.p1" "${OBJECTDIR}/TCPIP Stack/IP.p1" "${OBJECTDIR}/TCPIP Stack/ETH97J60.p1" "${OBJECTDIR}/TCPIP Stack/Helpers.p1" "${OBJECTDIR}/TCPIP Stack/ICMP.p1" "${OBJECTDIR}/TCPIP Stack/ARP.p1" "${OBJECTDIR}/TCPIP Stack/Tick.p1" "${OBJECTDIR}/TCPIP Stack/TCP.p1" ${OBJECTDIR}/main.p1 ${OBJECTDIR}/PingDemo.p1 ${OBJECTDIR}/GenericTCPServer.p1
-POSSIBLE_DEPFILES=${OBJECTDIR}/mcc_generated_files/device_config.p1.d ${OBJECTDIR}/mcc_generated_files/mcc.p1.d ${OBJECTDIR}/mcc_generated_files/pin_manager.p1.d ${OBJECTDIR}/mcc_generated_files/tmr0.p1.d ${OBJECTDIR}/mcc_generated_files/interrupt_manager.p1.d "${OBJECTDIR}/TCPIP Stack/StackTsk.p1.d" "${OBJECTDIR}/TCPIP Stack/IP.p1.d" "${OBJECTDIR}/TCPIP Stack/ETH97J60.p1.d" "${OBJECTDIR}/TCPIP Stack/Helpers.p1.d" "${OBJECTDIR}/TCPIP Stack/ICMP.p1.d" "${OBJECTDIR}/TCPIP Stack/ARP.p1.d" "${OBJECTDIR}/TCPIP Stack/Tick.p1.d" "${OBJECTDIR}/TCPIP Stack/TCP.p1.d" ${OBJECTDIR}/main.p1.d ${OBJECTDIR}/PingDemo.p1.d ${OBJECTDIR}/GenericTCPServer.p1.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/mcc_generated_files/device_config.p1 ${OBJECTDIR}/mcc_generated_files/mcc.p1 ${OBJECTDIR}/mcc_generated_files/pin_manager.p1 ${OBJECTDIR}/mcc_generated_files/tmr0.p1 ${OBJECTDIR}/mcc_generated_files/interrupt_manager.p1 "${OBJECTDIR}/TCPIP Stack/StackTsk.p1" "${OBJECTDIR}/TCPIP Stack/IP.p1" "${OBJECTDIR}/TCPIP Stack/ETH97J60.p1" "${OBJECTDIR}/TCPIP Stack/Helpers.p1" "${OBJECTDIR}/TCPIP Stack/ICMP.p1" "${OBJECTDIR}/TCPIP Stack/ARP.p1" "${OBJECTDIR}/TCPIP Stack/Tick.p1" "${OBJECTDIR}/TCPIP Stack/TCP.p1" "${OBJECTDIR}/TCPIP Stack/AutoIP.p1" "${OBJECTDIR}/TCPIP Stack/DHCP.p1" "${OBJECTDIR}/TCPIP Stack/UDP.p1" "${OBJECTDIR}/TCPIP Stack/Announce.p1" ${OBJECTDIR}/main.p1 ${OBJECTDIR}/PingDemo.p1 ${OBJECTDIR}/GenericTCPServer.p1
+POSSIBLE_DEPFILES=${OBJECTDIR}/mcc_generated_files/device_config.p1.d ${OBJECTDIR}/mcc_generated_files/mcc.p1.d ${OBJECTDIR}/mcc_generated_files/pin_manager.p1.d ${OBJECTDIR}/mcc_generated_files/tmr0.p1.d ${OBJECTDIR}/mcc_generated_files/interrupt_manager.p1.d "${OBJECTDIR}/TCPIP Stack/StackTsk.p1.d" "${OBJECTDIR}/TCPIP Stack/IP.p1.d" "${OBJECTDIR}/TCPIP Stack/ETH97J60.p1.d" "${OBJECTDIR}/TCPIP Stack/Helpers.p1.d" "${OBJECTDIR}/TCPIP Stack/ICMP.p1.d" "${OBJECTDIR}/TCPIP Stack/ARP.p1.d" "${OBJECTDIR}/TCPIP Stack/Tick.p1.d" "${OBJECTDIR}/TCPIP Stack/TCP.p1.d" "${OBJECTDIR}/TCPIP Stack/AutoIP.p1.d" "${OBJECTDIR}/TCPIP Stack/DHCP.p1.d" "${OBJECTDIR}/TCPIP Stack/UDP.p1.d" "${OBJECTDIR}/TCPIP Stack/Announce.p1.d" ${OBJECTDIR}/main.p1.d ${OBJECTDIR}/PingDemo.p1.d ${OBJECTDIR}/GenericTCPServer.p1.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/mcc_generated_files/device_config.p1 ${OBJECTDIR}/mcc_generated_files/mcc.p1 ${OBJECTDIR}/mcc_generated_files/pin_manager.p1 ${OBJECTDIR}/mcc_generated_files/tmr0.p1 ${OBJECTDIR}/mcc_generated_files/interrupt_manager.p1 ${OBJECTDIR}/TCPIP\ Stack/StackTsk.p1 ${OBJECTDIR}/TCPIP\ Stack/IP.p1 ${OBJECTDIR}/TCPIP\ Stack/ETH97J60.p1 ${OBJECTDIR}/TCPIP\ Stack/Helpers.p1 ${OBJECTDIR}/TCPIP\ Stack/ICMP.p1 ${OBJECTDIR}/TCPIP\ Stack/ARP.p1 ${OBJECTDIR}/TCPIP\ Stack/Tick.p1 ${OBJECTDIR}/TCPIP\ Stack/TCP.p1 ${OBJECTDIR}/main.p1 ${OBJECTDIR}/PingDemo.p1 ${OBJECTDIR}/GenericTCPServer.p1
+OBJECTFILES=${OBJECTDIR}/mcc_generated_files/device_config.p1 ${OBJECTDIR}/mcc_generated_files/mcc.p1 ${OBJECTDIR}/mcc_generated_files/pin_manager.p1 ${OBJECTDIR}/mcc_generated_files/tmr0.p1 ${OBJECTDIR}/mcc_generated_files/interrupt_manager.p1 ${OBJECTDIR}/TCPIP\ Stack/StackTsk.p1 ${OBJECTDIR}/TCPIP\ Stack/IP.p1 ${OBJECTDIR}/TCPIP\ Stack/ETH97J60.p1 ${OBJECTDIR}/TCPIP\ Stack/Helpers.p1 ${OBJECTDIR}/TCPIP\ Stack/ICMP.p1 ${OBJECTDIR}/TCPIP\ Stack/ARP.p1 ${OBJECTDIR}/TCPIP\ Stack/Tick.p1 ${OBJECTDIR}/TCPIP\ Stack/TCP.p1 ${OBJECTDIR}/TCPIP\ Stack/AutoIP.p1 ${OBJECTDIR}/TCPIP\ Stack/DHCP.p1 ${OBJECTDIR}/TCPIP\ Stack/UDP.p1 ${OBJECTDIR}/TCPIP\ Stack/Announce.p1 ${OBJECTDIR}/main.p1 ${OBJECTDIR}/PingDemo.p1 ${OBJECTDIR}/GenericTCPServer.p1
 
 # Source Files
-SOURCEFILES=mcc_generated_files/device_config.c mcc_generated_files/mcc.c mcc_generated_files/pin_manager.c mcc_generated_files/tmr0.c mcc_generated_files/interrupt_manager.c TCPIP Stack/StackTsk.c TCPIP Stack/IP.c TCPIP Stack/ETH97J60.c TCPIP Stack/Helpers.c TCPIP Stack/ICMP.c TCPIP Stack/ARP.c TCPIP Stack/Tick.c TCPIP Stack/TCP.c main.c PingDemo.c GenericTCPServer.c
+SOURCEFILES=mcc_generated_files/device_config.c mcc_generated_files/mcc.c mcc_generated_files/pin_manager.c mcc_generated_files/tmr0.c mcc_generated_files/interrupt_manager.c TCPIP Stack/StackTsk.c TCPIP Stack/IP.c TCPIP Stack/ETH97J60.c TCPIP Stack/Helpers.c TCPIP Stack/ICMP.c TCPIP Stack/ARP.c TCPIP Stack/Tick.c TCPIP Stack/TCP.c TCPIP Stack/AutoIP.c TCPIP Stack/DHCP.c TCPIP Stack/UDP.c TCPIP Stack/Announce.c main.c PingDemo.c GenericTCPServer.c
 
 
 
@@ -198,6 +198,38 @@ ${OBJECTDIR}/TCPIP\ Stack/TCP.p1: TCPIP\ Stack/TCP.c  nbproject/Makefile-${CND_C
 	@-${MV} "${OBJECTDIR}/TCPIP Stack/TCP".d "${OBJECTDIR}/TCPIP Stack/TCP.p1".d 
 	@${FIXDEPS} "${OBJECTDIR}/TCPIP Stack/TCP.p1".d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
+${OBJECTDIR}/TCPIP\ Stack/AutoIP.p1: TCPIP\ Stack/AutoIP.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/TCPIP Stack" 
+	@${RM} "${OBJECTDIR}/TCPIP Stack/AutoIP.p1".d 
+	@${RM} "${OBJECTDIR}/TCPIP Stack/AutoIP.p1" 
+	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G  -D__DEBUG=1  --debugger=none  --double=32 --float=32 --emi=wordwrite --opt=none --addrqual=ignore -DCFG_INCLUDE_PICDN2_ETH97 -P -N255 -I"Include" -I"." --warn=-3 --asmlist -DXPRJ_default=$(CND_CONF)  --summary=default,-psect,-class,+mem,-hex,-file --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,-download,+config,+clib,-plib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"     -o"${OBJECTDIR}/TCPIP Stack/AutoIP.p1" "TCPIP Stack/AutoIP.c" 
+	@-${MV} "${OBJECTDIR}/TCPIP Stack/AutoIP".d "${OBJECTDIR}/TCPIP Stack/AutoIP.p1".d 
+	@${FIXDEPS} "${OBJECTDIR}/TCPIP Stack/AutoIP.p1".d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
+${OBJECTDIR}/TCPIP\ Stack/DHCP.p1: TCPIP\ Stack/DHCP.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/TCPIP Stack" 
+	@${RM} "${OBJECTDIR}/TCPIP Stack/DHCP.p1".d 
+	@${RM} "${OBJECTDIR}/TCPIP Stack/DHCP.p1" 
+	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G  -D__DEBUG=1  --debugger=none  --double=32 --float=32 --emi=wordwrite --opt=none --addrqual=ignore -DCFG_INCLUDE_PICDN2_ETH97 -P -N255 -I"Include" -I"." --warn=-3 --asmlist -DXPRJ_default=$(CND_CONF)  --summary=default,-psect,-class,+mem,-hex,-file --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,-download,+config,+clib,-plib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"     -o"${OBJECTDIR}/TCPIP Stack/DHCP.p1" "TCPIP Stack/DHCP.c" 
+	@-${MV} "${OBJECTDIR}/TCPIP Stack/DHCP".d "${OBJECTDIR}/TCPIP Stack/DHCP.p1".d 
+	@${FIXDEPS} "${OBJECTDIR}/TCPIP Stack/DHCP.p1".d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
+${OBJECTDIR}/TCPIP\ Stack/UDP.p1: TCPIP\ Stack/UDP.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/TCPIP Stack" 
+	@${RM} "${OBJECTDIR}/TCPIP Stack/UDP.p1".d 
+	@${RM} "${OBJECTDIR}/TCPIP Stack/UDP.p1" 
+	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G  -D__DEBUG=1  --debugger=none  --double=32 --float=32 --emi=wordwrite --opt=none --addrqual=ignore -DCFG_INCLUDE_PICDN2_ETH97 -P -N255 -I"Include" -I"." --warn=-3 --asmlist -DXPRJ_default=$(CND_CONF)  --summary=default,-psect,-class,+mem,-hex,-file --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,-download,+config,+clib,-plib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"     -o"${OBJECTDIR}/TCPIP Stack/UDP.p1" "TCPIP Stack/UDP.c" 
+	@-${MV} "${OBJECTDIR}/TCPIP Stack/UDP".d "${OBJECTDIR}/TCPIP Stack/UDP.p1".d 
+	@${FIXDEPS} "${OBJECTDIR}/TCPIP Stack/UDP.p1".d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
+${OBJECTDIR}/TCPIP\ Stack/Announce.p1: TCPIP\ Stack/Announce.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/TCPIP Stack" 
+	@${RM} "${OBJECTDIR}/TCPIP Stack/Announce.p1".d 
+	@${RM} "${OBJECTDIR}/TCPIP Stack/Announce.p1" 
+	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G  -D__DEBUG=1  --debugger=none  --double=32 --float=32 --emi=wordwrite --opt=none --addrqual=ignore -DCFG_INCLUDE_PICDN2_ETH97 -P -N255 -I"Include" -I"." --warn=-3 --asmlist -DXPRJ_default=$(CND_CONF)  --summary=default,-psect,-class,+mem,-hex,-file --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,-download,+config,+clib,-plib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"     -o"${OBJECTDIR}/TCPIP Stack/Announce.p1" "TCPIP Stack/Announce.c" 
+	@-${MV} "${OBJECTDIR}/TCPIP Stack/Announce".d "${OBJECTDIR}/TCPIP Stack/Announce.p1".d 
+	@${FIXDEPS} "${OBJECTDIR}/TCPIP Stack/Announce.p1".d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
 ${OBJECTDIR}/main.p1: main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/main.p1.d 
@@ -326,6 +358,38 @@ ${OBJECTDIR}/TCPIP\ Stack/TCP.p1: TCPIP\ Stack/TCP.c  nbproject/Makefile-${CND_C
 	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G  --double=32 --float=32 --emi=wordwrite --opt=none --addrqual=ignore -DCFG_INCLUDE_PICDN2_ETH97 -P -N255 -I"Include" -I"." --warn=-3 --asmlist -DXPRJ_default=$(CND_CONF)  --summary=default,-psect,-class,+mem,-hex,-file --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,-download,+config,+clib,-plib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"     -o"${OBJECTDIR}/TCPIP Stack/TCP.p1" "TCPIP Stack/TCP.c" 
 	@-${MV} "${OBJECTDIR}/TCPIP Stack/TCP".d "${OBJECTDIR}/TCPIP Stack/TCP.p1".d 
 	@${FIXDEPS} "${OBJECTDIR}/TCPIP Stack/TCP.p1".d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
+${OBJECTDIR}/TCPIP\ Stack/AutoIP.p1: TCPIP\ Stack/AutoIP.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/TCPIP Stack" 
+	@${RM} "${OBJECTDIR}/TCPIP Stack/AutoIP.p1".d 
+	@${RM} "${OBJECTDIR}/TCPIP Stack/AutoIP.p1" 
+	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G  --double=32 --float=32 --emi=wordwrite --opt=none --addrqual=ignore -DCFG_INCLUDE_PICDN2_ETH97 -P -N255 -I"Include" -I"." --warn=-3 --asmlist -DXPRJ_default=$(CND_CONF)  --summary=default,-psect,-class,+mem,-hex,-file --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,-download,+config,+clib,-plib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"     -o"${OBJECTDIR}/TCPIP Stack/AutoIP.p1" "TCPIP Stack/AutoIP.c" 
+	@-${MV} "${OBJECTDIR}/TCPIP Stack/AutoIP".d "${OBJECTDIR}/TCPIP Stack/AutoIP.p1".d 
+	@${FIXDEPS} "${OBJECTDIR}/TCPIP Stack/AutoIP.p1".d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
+${OBJECTDIR}/TCPIP\ Stack/DHCP.p1: TCPIP\ Stack/DHCP.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/TCPIP Stack" 
+	@${RM} "${OBJECTDIR}/TCPIP Stack/DHCP.p1".d 
+	@${RM} "${OBJECTDIR}/TCPIP Stack/DHCP.p1" 
+	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G  --double=32 --float=32 --emi=wordwrite --opt=none --addrqual=ignore -DCFG_INCLUDE_PICDN2_ETH97 -P -N255 -I"Include" -I"." --warn=-3 --asmlist -DXPRJ_default=$(CND_CONF)  --summary=default,-psect,-class,+mem,-hex,-file --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,-download,+config,+clib,-plib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"     -o"${OBJECTDIR}/TCPIP Stack/DHCP.p1" "TCPIP Stack/DHCP.c" 
+	@-${MV} "${OBJECTDIR}/TCPIP Stack/DHCP".d "${OBJECTDIR}/TCPIP Stack/DHCP.p1".d 
+	@${FIXDEPS} "${OBJECTDIR}/TCPIP Stack/DHCP.p1".d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
+${OBJECTDIR}/TCPIP\ Stack/UDP.p1: TCPIP\ Stack/UDP.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/TCPIP Stack" 
+	@${RM} "${OBJECTDIR}/TCPIP Stack/UDP.p1".d 
+	@${RM} "${OBJECTDIR}/TCPIP Stack/UDP.p1" 
+	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G  --double=32 --float=32 --emi=wordwrite --opt=none --addrqual=ignore -DCFG_INCLUDE_PICDN2_ETH97 -P -N255 -I"Include" -I"." --warn=-3 --asmlist -DXPRJ_default=$(CND_CONF)  --summary=default,-psect,-class,+mem,-hex,-file --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,-download,+config,+clib,-plib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"     -o"${OBJECTDIR}/TCPIP Stack/UDP.p1" "TCPIP Stack/UDP.c" 
+	@-${MV} "${OBJECTDIR}/TCPIP Stack/UDP".d "${OBJECTDIR}/TCPIP Stack/UDP.p1".d 
+	@${FIXDEPS} "${OBJECTDIR}/TCPIP Stack/UDP.p1".d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
+${OBJECTDIR}/TCPIP\ Stack/Announce.p1: TCPIP\ Stack/Announce.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/TCPIP Stack" 
+	@${RM} "${OBJECTDIR}/TCPIP Stack/Announce.p1".d 
+	@${RM} "${OBJECTDIR}/TCPIP Stack/Announce.p1" 
+	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G  --double=32 --float=32 --emi=wordwrite --opt=none --addrqual=ignore -DCFG_INCLUDE_PICDN2_ETH97 -P -N255 -I"Include" -I"." --warn=-3 --asmlist -DXPRJ_default=$(CND_CONF)  --summary=default,-psect,-class,+mem,-hex,-file --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,-download,+config,+clib,-plib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"     -o"${OBJECTDIR}/TCPIP Stack/Announce.p1" "TCPIP Stack/Announce.c" 
+	@-${MV} "${OBJECTDIR}/TCPIP Stack/Announce".d "${OBJECTDIR}/TCPIP Stack/Announce.p1".d 
+	@${FIXDEPS} "${OBJECTDIR}/TCPIP Stack/Announce.p1".d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
 ${OBJECTDIR}/main.p1: main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 

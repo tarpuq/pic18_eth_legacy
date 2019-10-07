@@ -63,7 +63,7 @@
  */
 //#define STACK_USE_UART					// Application demo using UART for IP address display and stack configuration
 //#define STACK_USE_UART2TCP_BRIDGE		// UART to TCP Bridge application example
-//#define STACK_USE_IP_GLEANING
+#define STACK_USE_IP_GLEANING
 #define STACK_USE_ICMP_SERVER			// Ping query and response capability
 #define STACK_USE_ICMP_CLIENT			// Ping transmission capability
 //#define STACK_USE_HTTP2_SERVER			// New HTTP server with POST, Cookies, Authentication, etc.
@@ -80,7 +80,7 @@
 //#define STACK_USE_GENERIC_TCP_CLIENT_EXAMPLE	// HTTP Client example in GenericTCPClient.c
 #define STACK_USE_GENERIC_TCP_SERVER_EXAMPLE	// ToUpper server example in GenericTCPServer.c
 //#define STACK_USE_TELNET_SERVER			// Telnet server
-//#define STACK_USE_ANNOUNCE				// Microchip Embedded Ethernet Device Discoverer server/client
+#define STACK_USE_ANNOUNCE				// Microchip Embedded Ethernet Device Discoverer server/client
 //#define STACK_USE_DNS					// Domain Name Service Client for resolving hostname strings to IP addresses
 //#define STACK_USE_DNS_SERVER			// Domain Name Service Server for redirection to the local device
 //#define STACK_USE_NBNS					// NetBIOS Name Service Server for repsonding to NBNS hostname broadcast queries
@@ -148,7 +148,7 @@
  *   To clear EEPROM, hold BUTTON0, reset the board, and continue
  *   holding until the LEDs flash.  Release, and reset again.
  */
-#define MY_DEFAULT_HOST_NAME			"PIC-WEB"
+#define MY_DEFAULT_HOST_NAME			"GGG"
 
 #define MY_DEFAULT_MAC_BYTE1            (0x00)	// Use the default of 00-04-A3-00-00-00
 #define MY_DEFAULT_MAC_BYTE2            (0x04)	// if using an ENCX24J600, MRF24WB0M, or
@@ -169,7 +169,7 @@
 
 #define MY_DEFAULT_GATE_BYTE1           (192ul)
 #define MY_DEFAULT_GATE_BYTE2           (168ul)
-#define MY_DEFAULT_GATE_BYTE3           (0ul)
+#define MY_DEFAULT_GATE_BYTE3           (1ul)
 #define MY_DEFAULT_GATE_BYTE4           (1ul)
 
 #define MY_DEFAULT_PRIMARY_DNS_BYTE1	(8ul)
@@ -216,8 +216,8 @@
  *   based on module selections above.  If your custom module
  *   requires them otherwise, enable them here.
  */
-//#define STACK_USE_TCP
-//#define STACK_USE_UDP
+#define STACK_USE_TCP
+#define STACK_USE_UDP
 
 /* Client Mode Configuration
  *   Uncomment following line if this stack will be used in CLIENT
@@ -233,7 +233,7 @@
  */
 	// Allocate how much total RAM (in bytes) you want to allocate
 	// for use by your TCP TCBs, RX FIFOs, and TX FIFOs.
-	#define TCP_ETH_RAM_SIZE					(342ul)
+	#define TCP_ETH_RAM_SIZE					(878ul)
 	#define TCP_PIC_RAM_SIZE					(0ul)
 	#define TCP_SPI_RAM_SIZE					(0ul)
 	#define TCP_SPI_RAM_BASE_ADDRESS			(0x00)
@@ -277,7 +277,7 @@
 		} TCPSocketInitializer[] = 
 		{
 			//{TCP_PURPOSE_GENERIC_TCP_CLIENT, TCP_ETH_RAM, 125, 100},
-			//{TCP_PURPOSE_GENERIC_TCP_SERVER, TCP_ETH_RAM, 20, 20},
+			{TCP_PURPOSE_GENERIC_TCP_SERVER, TCP_ETH_RAM, 20, 20},
 			//{TCP_PURPOSE_TELNET, TCP_ETH_RAM, 200, 150},
 			//{TCP_PURPOSE_TELNET, TCP_ETH_RAM, 200, 150},
 			//{TCP_PURPOSE_TELNET, TCP_ETH_RAM, 200, 150},
@@ -288,7 +288,7 @@
 			//{TCP_PURPOSE_UART_2_TCP_BRIDGE, TCP_ETH_RAM, 256, 256},
 			//{TCP_PURPOSE_HTTP_SERVER, TCP_ETH_RAM, 200, 200},
 			//{TCP_PURPOSE_HTTP_SERVER, TCP_ETH_RAM, 200, 200},
-			//{TCP_PURPOSE_DEFAULT, TCP_ETH_RAM, 200, 200},
+			{TCP_PURPOSE_DEFAULT, TCP_ETH_RAM, 200, 200},
 			{TCP_PURPOSE_BERKELEY_SERVER, TCP_ETH_RAM, 25, 20},
 			//{TCP_PURPOSE_BERKELEY_SERVER, TCP_ETH_RAM, 25, 20},
 			//{TCP_PURPOSE_BERKELEY_SERVER, TCP_ETH_RAM, 25, 20},

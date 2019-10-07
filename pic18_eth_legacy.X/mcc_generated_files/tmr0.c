@@ -51,6 +51,8 @@
 #include <xc.h>
 #include "tmr0.h"
 
+#include "TCPIP Stack/Tick.h"
+
 /**
   Section: Global Variables Definitions
 */
@@ -71,11 +73,11 @@ void TMR0_Initialize(void)
     //Enable 16bit timer mode before assigning value to TMR0H
     T0CONbits.T08BIT = 0;
 
-    // TMR0H 151; 
-    TMR0H = 0x97;
+    // TMR0H 0; 
+    TMR0H = 0x00;
 
-    // TMR0L 212; 
-    TMR0L = 0xD4;
+    // TMR0L 0; 
+    TMR0L = 0x00;
 
 	
     // Load TMR0 value to the 16-bit reload variable
@@ -90,8 +92,8 @@ void TMR0_Initialize(void)
     // Set Default Interrupt Handler
     TMR0_SetInterruptHandler(TMR0_DefaultInterruptHandler);
 
-    // T0PS 1:256; T08BIT 16-bit; T0SE Increment_hi_lo; T0CS FOSC/4; TMR0ON enabled; PSA not_assigned; 
-    T0CON = 0x9F;
+    // T0PS 1:256; T08BIT 16-bit; T0SE Increment_lo_hi; T0CS FOSC/4; TMR0ON enabled; PSA assigned; 
+    T0CON = 0x87;
 }
 
 void TMR0_StartTimer(void)
@@ -135,6 +137,7 @@ void TMR0_Reload(void)
 
 void TMR0_ISR(void)
 {
+    TickUpdate();
 
     // clear the TMR0 interrupt flag
     INTCONbits.TMR0IF = 0;

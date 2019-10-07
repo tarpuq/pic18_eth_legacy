@@ -268,12 +268,12 @@ void main(void)
     // Initialize the device
     SYSTEM_Initialize();
 
-    // Initialize Stack and application related NV variables into AppConfig.
-    InitAppConfig();
-
     // Initialize stack-related hardware components that may be 
     // required by the UART configuration routines
     TickInit();
+
+    // Initialize Stack and application related NV variables into AppConfig.
+    InitAppConfig();
 
     // Initialize core stack layers (MAC, ARP, TCP, UDP) and
     // application modules (HTTP, SNMP, etc.)
@@ -297,6 +297,9 @@ void main(void)
 
     while (1)
     {
+        static DWORD t = 0;
+        static DWORD dwLastIP = 0;
+        
         // Add your application code
         StackTask();
 
@@ -311,6 +314,32 @@ void main(void)
         PingDemo();
 #endif
 
+        // If the local IP address has changed (ex: due to DHCP lease change)
+        // write the new IP address to the LCD display, UART, and Announce 
+        // service
+        if (dwLastIP != AppConfig.MyIPAddr.Val)
+        {
+            dwLastIP = AppConfig.MyIPAddr.Val;
+
+#if defined(STACK_USE_UART)
+            putrsUART((ROM char*) "\r\nNew IP Address: ");
+#endif
+
+            // DisplayIPValue(AppConfig.MyIPAddr);
+
+#if defined(STACK_USE_UART)
+            putrsUART((ROM char*) "\r\n");
+#endif
+
+
+#if defined(STACK_USE_ANNOUNCE)
+            AnnounceIP();
+#endif
+
+#if defined(STACK_USE_ZEROCONF_MDNS_SD)
+            mDNSFillHostRecord();
+#endif
+        }
 
     }
 }

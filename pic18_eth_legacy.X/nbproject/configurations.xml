@@ -14,6 +14,8 @@
         <itemPath>mcc_generated_files/tmr0.h</itemPath>
       </logicalFolder>
       <itemPath>HardwareProfile.h</itemPath>
+      <itemPath>Configs/HWP TARPUQ.h</itemPath>
+      <itemPath>Configs/TCPIP TARPUQ.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -40,6 +42,10 @@
         <itemPath>TCPIP Stack/ARP.c</itemPath>
         <itemPath>TCPIP Stack/Tick.c</itemPath>
         <itemPath>TCPIP Stack/TCP.c</itemPath>
+        <itemPath>TCPIP Stack/AutoIP.c</itemPath>
+        <itemPath>TCPIP Stack/DHCP.c</itemPath>
+        <itemPath>TCPIP Stack/UDP.c</itemPath>
+        <itemPath>TCPIP Stack/Announce.c</itemPath>
       </logicalFolder>
       <itemPath>main.c</itemPath>
       <itemPath>PingDemo.c</itemPath>
