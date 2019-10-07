@@ -299,12 +299,23 @@ void main(void)
     {
         static DWORD t = 0;
         static DWORD dwLastIP = 0;
-        
+
         // Add your application code
         StackTask();
 
         // This tasks invokes each of the core stack application tasks
         StackApplications();
+
+        // Process application specific tasks here.
+        // For this demo app, this will include the Generic TCP 
+        // client and servers, and the SNMP, Ping, and SNMP Trap
+        // demos.  Following that, we will process any IO from
+        // the inputs on the board itself.
+        // Any custom modules or processing you need to do should
+        // go here.
+#if defined(STACK_USE_GENERIC_TCP_CLIENT_EXAMPLE)
+        GenericTCPClient();
+#endif
 
 #if defined(STACK_USE_GENERIC_TCP_SERVER_EXAMPLE)
         GenericTCPServer();

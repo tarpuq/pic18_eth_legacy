@@ -46,10 +46,12 @@
         <itemPath>TCPIP Stack/DHCP.c</itemPath>
         <itemPath>TCPIP Stack/UDP.c</itemPath>
         <itemPath>TCPIP Stack/Announce.c</itemPath>
+        <itemPath>TCPIP Stack/DNS.c</itemPath>
       </logicalFolder>
       <itemPath>main.c</itemPath>
       <itemPath>PingDemo.c</itemPath>
       <itemPath>GenericTCPServer.c</itemPath>
+      <itemPath>GenericTCPClient.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
